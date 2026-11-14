@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171717">
+<meta name="description" content="Shop bags, school bags, lunch boxes, water bottles and belts at Esty-D Shopping Center.">
+<title>Esty-D Shopping Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#f47721;--ink:#171717;--cream:#fff8f2;--muted:#777}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink)}
+a{text-decoration:none;color:inherit}button,.btn{cursor:pointer;border:0;border-radius:30px;background:var(--orange);color:white;padding:12px 18px;font-weight:700}
+.top{background:var(--ink);color:white;text-align:center;padding:9px;font-size:11px;letter-spacing:2px}
+header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);z-index:5;border-bottom:1px solid #eee}
+.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;display:flex;align-items:center;gap:9px}.mark{background:var(--orange);color:white;border-radius:11px;padding:9px 13px;font-size:20px}
+.links{display:flex;gap:24px;font-size:13px;font-weight:700}.links a:hover{color:var(--orange)}
+.hero{background:var(--cream)}.hero-in{max-width:1120px;margin:auto;padding:70px 22px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px}
+.eyebrow{color:var(--orange);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font:700 clamp(44px,6vw,72px)/1.05 'Playfair Display',serif;margin:17px 0}.hero h1 span{color:var(--orange)}
+p{line-height:1.8;color:var(--muted)}.hero p{max-width:470px}
+.hero-img{height:390px;border-radius:180px 180px 20px 20px;background:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=85') center/cover;box-shadow:0 20px 55px #0002}
+.section{max-width:1120px;margin:auto;padding:70px 22px}.heading{text-align:center;margin-bottom:32px}
+.heading h2,.about h2,.cta h2{font:700 clamp(30px,4vw,44px) 'Playfair Display',serif;margin:10px 0}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.cat{background:var(--cream);border-radius:16px;padding:22px 10px;text-align:center;font-weight:700;font-size:13px;transition:.2s}.cat:hover,.card:hover{transform:translateY(-5px)}
+.emoji{font-size:30px;display:block;margin-bottom:12px}
+.shop{background:#faf8f5}.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:20px 0 28px}
+.filters button{background:white;color:#333;border:1px solid #e5ddd6;padding:9px 14px;font-size:11px}.filters button.active{background:var(--ink);color:white}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:white;border-radius:15px;overflow:hidden;transition:.2s;border:1px solid #eee}
+.card img{width:100%;height:190px;object-fit:cover;background:#eee}.info{padding:14px}.info small{color:var(--orange);font-weight:800;text-transform:uppercase;font-size:10px}
+.info h3{font-size:15px;margin:7px 0}.info p{font-size:11px;margin:0 0 12px}.bottom{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.bottom b{font-size:11px}.bottom button{font-size:10px;padding:9px 11px;background:var(--ink)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{width:100%;height:340px;object-fit:cover;border-radius:18px}
+.cta{background:var(--ink);color:white;text-align:center;padding:60px 20px}.cta p{color:#ccc}
+.footer{background:#101010;color:white;padding:30px 22px;text-align:center;font-size:12px}
+.cart{position:fixed;right:-390px;top:0;width:min(370px,92vw);height:100vh;background:white;z-index:10;padding:22px;box-shadow:0 0 0 100vw #0007;transition:.3s;display:flex;flex-direction:column}.cart.open{right:0}
+.cart-head{display:flex;justify-content:space-between;align-items:center}.cart-items{flex:1;overflow:auto}.cart-row{padding:12px 0;border-bottom:1px solid #eee;font-size:13px;display:flex;justify-content:space-between;gap:10px}.cart-row button{padding:5px 9px}
+.menu{display:none;background:transparent;color:#111;font-size:22px;padding:4px}
+@media(max-width:800px){.hero-in{gap:20px}.cats{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.nav{padding:12px 15px}.menu{display:block}.links{display:none;position:absolute;top:60px;left:0;right:0;background:white;padding:20px;flex-direction:column}.links.show{display:flex}.hero-in{grid-template-columns:1fr;padding:48px 19px}.hero-img{height:280px}.section{padding:55px 16px}.cats{grid-template-columns:repeat(2,1fr)}.cat:last-child{grid-column:span 2}.grid{gap:10px}.card img{height:145px}.info{padding:11px}.info h3{font-size:13px}.about{grid-template-columns:1fr}.about img{height:240px}}
+</style>
+</head>
+<body>
+<div class="top">QUALITY PRODUCTS, GREAT CHOICES · EVERYDAY ESSENTIALS</div>
+<header><nav class="nav">
+<a class="brand" href="#home"><span class="mark">E</span> ESTY-D SHOPPING CENTER</a>
+<button class="menu" id="menu" aria-label="Open menu">☰</button>
+<div class="links" id="links"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<button id="open">Enquiry Cart (<span id="count">0</span>)</button>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-in"><div><div class="eyebrow">Welcome to Esty-D</div><h1>Little things.<br><span>Big style.</span></h1><p>Discover useful, stylish everyday essentials — from bags that carry your day to accessories that complete your look.</p><a class="btn" href="#products">Explore collection ↗</a></div><div class="hero-img"></div></div></section>
+<section class="section" id="categories"><div class="heading"><div class="eyebrow">Shop by category</div><h2>Find your everyday favourite</h2><p>Useful essentials, selected with you in mind.</p></div><div class="cats">
+<a class="cat" href="#products" data-cat="Bags"><span class="emoji">👜</span>Fashion Bags</a><a class="cat" href="#products" data-cat="School Bags"><span class="emoji">🎒</span>School Bags</a><a class="cat" href="#products" data-cat="Lunch Boxes"><span class="emoji">🍱</span>Lunch Boxes</a><a class="cat" href="#products" data-cat="Water Bottles"><span class="emoji">🧴</span>Water Bottles</a><a class="cat" href="#products" data-cat="Belts"><span class="emoji">🧷</span>Belts</a>
+</div></section>
+<section class="shop" id="products"><div class="section"><div class="heading"><div class="eyebrow">The Esty-D collection</div><h2>Browse our picks</h2><p>Add your favourites to an enquiry cart.</p></div>
+<div class="filters" id="filters"><button class="active" data-filter="All">All items</button><button data-filter="Bags">Bags</button><button data-filter="School Bags">School bags</button><button data-filter="Lunch Boxes">Lunch boxes</button><button data-filter="Water Bottles">Bottles</button><button data-filter="Belts">Belts</button></div><div class="grid" id="grid"></div>
+</div></section>
+<section class="section about" id="about"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=85" alt="Everyday accessories"><div><div class="eyebrow">A little about us</div><h2>Good choices for every day.</h2><p>At Esty-D Shopping Center, we believe everyday essentials should be practical, stylish and easy to find. Explore our collection of bags, school accessories and more.</p><p>Choose your favourites and send us an enquiry to confirm prices and availability.</p></div></section>
+<section class="cta" id="contact"><div class="eyebrow">Ready to find your favourite?</div><h2>Your next great choice starts here.</h2><p>Browse the collection and send an enquiry about the items you love.</p><a class="btn" href="#products">Shop the collection ↗</a></section>
+</main>
+<footer class="footer">ESTY-D SHOPPING CENTER · Quality Products, Great Choices · © <span id="year"></span></footer>
+<aside class="cart" id="cart"><div class="cart-head"><h2>Your enquiry cart</h2><button id="close">×</button></div><div class="cart-items" id="items">Your cart is empty.</div><p style="font-size:12px">Prices and availability will be confirmed by the shop.</p><button id="send">Send enquiry via WhatsApp</button></aside>
+<script>
+const products=[
+[1,'Everyday Fashion Bag','Bags','Stylish companion for daily essentials','photo-1548036328-c9fa89d128fa'],
+[2,'Classic Shoulder Bag','Bags','A versatile look for outings','photo-1584917865442-de89df76afd3'],
+[3,'School Backpack','School Bags','A practical carry-all for school days','photo-1553062407-98eeb64c6a62'],
+[4,'Casual Daypack','School Bags','Room for the essentials wherever you go','photo-1622560480654-d96214fdc887'],
+[5,'Lunch Box','Lunch Boxes','A handy option for carrying your meals','photo-1606787366850-de6330128bfc'],
+[6,'Food Container','Lunch Boxes','Make meal time easy while you are out','photo-1547592180-85f173990554'],
+[7,'Reusable Water Bottle','Water Bottles','A hydration companion for the day','photo-1602143407151-7111542de6e8'],
+[8,'Sports Water Bottle','Water Bottles','Keep water close at school, work or play','photo-1523362628745-0c100150b504'],
+[9,'Classic Everyday Belt','Belts','A finishing touch for your outfit','photo-1624222247344-550fb8d4c5f7'],
+[10,'Smart Style Belt','Belts','A timeless accessory for a neat look','photo-1553062407-98eeb64c6a62']];
+const cart={};let filter='All';const grid=document.getElementById('grid');
+function render(){grid.innerHTML=products.filter(p=>filter==='All'||p[2]===filter).map(p=>'<article class="card"><img loading="lazy" src="https://images.unsplash.com/'+p[4]+'?auto=format&fit=crop&w=650&q=80" alt="'+p[1]+'"><div class="info"><small>'+p[2]+'</small><h3>'+p[1]+'</h3><p>'+p[3]+'</p><div class="bottom"><b>Ask for price</b><button data-add="'+p[0]+'">+ Add</button></div></div></article>').join('')}
+function update(){let entries=Object.values(cart);document.getElementById('count').textContent=entries.reduce((s,x)=>s+x.qty,0);document.getElementById('items').innerHTML=entries.length?entries.map(x=>'<div class="cart-row"><span>'+x.name+'<br>Qty: '+x.qty+'</span><span><button data-dec="'+x.id+'">−</button> <button data-inc="'+x.id+'">+</button></span></div>').join(''):'Your cart is empty.'}
+grid.addEventListener('click',e=>{let id=+e.target.dataset.add;if(!id)return;let p=products.find(x=>x[0]===id);cart[id]?cart[id].qty++:cart[id]={id:p[0],name:p[1],category:p[2],qty:1};update()});
+document.getElementById('items').addEventListener('click',e=>{let id=+e.target.dataset.inc||+e.target.dataset.dec;if(!id)return;if(e.target.dataset.inc)cart[id].qty++;else if(--cart[id].qty<=0)delete cart[id];update()});
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));render()});
+document.querySelectorAll('[data-cat]').forEach(a=>a.onclick=()=>{filter=a.dataset.cat;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x.dataset.filter===filter));render()});
+const panel=document.getElementById('cart');document.getElementById('open').onclick=()=>panel.classList.add('open');document.getElementById('close').onclick=()=>panel.classList.remove('open');
+document.getElementById('send').onclick=()=>{let rows=Object.values(cart);if(!rows.length){alert('Add an item first.');return}let n=localStorage.getItem('estyd_wa')||prompt('Enter shop WhatsApp number with country code (example: 2348012345678)');if(!n)return;n=n.replace(/\D/g,'');if(n.length<10){alert('Enter a valid WhatsApp number.');return}localStorage.setItem('estyd_wa',n);let msg='Hello Esty-D Shopping Center, I would like to enquire about:\n'+rows.map(x=>'• '+x.name+' — Qty '+x.qty).join('\n')+'\nPlease share prices and availability. Thank you.';window.open('https://wa.me/'+n+'?text='+encodeURIComponent(msg),'_blank')};
+document.getElementById('menu').onclick=()=>document.getElementById('links').classList.toggle('show');document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.getElementById('links').classList.remove('show'));document.getElementById('year').textContent=new Date().getFullYear();render();
+</script></body></html>
